@@ -8,9 +8,9 @@ Aegis veut automatiser l'estimation des frais médicaux annuels de ses assurés,
 
 | Élément | Rôle |
 |---|---|
-| `insurance_health_prediction.ipynb` | Notebook : exploration, 3 lots de KPI, comparaison de 4 modèles, optimisation, diagnostic, sauvegarde du modèle |
+| `insurance_health_prediction.ipynb` | Notebook : exploration, KPI par thème, comparaison de 4 modèles, optimisation, diagnostic du surapprentissage, sauvegarde du modèle |
 | `streamlit_app.py` | Point d'entrée de l'application (navigation) |
-| `app_pages/` | Pages : Accueil, Analyse, Choix du modèle, Simulateur, Recommandation |
+| `app_pages/` | Pages : Accueil, Analyse (Tabagisme, BMI et âge, Région et famille), Choix du modèle, Simulateur, Recommandation |
 | `utils.py` | Chargement des données et du modèle, calculs et graphiques partagés |
 | `data/insurance-data.csv` | Données (1 338 lignes, 1 337 après suppression d'un doublon) |
 | `model_rf.pkl`, `preprocessor.pkl` | Random Forest optimisé et prétraitement produits par le notebook |
@@ -38,8 +38,8 @@ Les fichiers `model_rf.pkl` et `preprocessor.pkl` ont été créés avec scikit-
 
 ## Équipe
 
-| Membre | Rôle | Lot d'analyse |
+| Membre | Rôle | Thème d'analyse |
 |---|---|---|
-| Loïc | Data Analyst | Lot 1 · Tabagisme |
-| Suz | Data Scientist | Lot 2 · BMI et âge |
-| David | Data Analyst | Lot 3 · Région et famille |
+| Loïc | Data Analyst | Tabagisme |
+| Suz | Data Scientist | BMI et âge |
+| David | Data Analyst | Région et famille |

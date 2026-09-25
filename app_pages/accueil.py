@@ -42,7 +42,7 @@ with col3:
 st.subheader("L'équipe")
 MEMBRES = [
     ("Loïc", "Data Analyst", "Tabagisme"),
-    ("Suz", "Data Scientist", "BMI et âge"),
+    ("Suz", "Data Analyst", "BMI et âge"),
     ("David", "Data Analyst", "Région et famille"),
 ]
 for colonne, (nom, role, lot) in zip(st.columns(3), MEMBRES):
